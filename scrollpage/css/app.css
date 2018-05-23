@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+#fixedEle{
+    position:fixed;
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background: transparent;
+    color: white;
+    font-size: 30px;
+}
+#logo{
+    border: 1px solid white;
+    padding: 10px;
+    position: absolute;
+    top: 100px;
+    left:100px;
+}
+#pageCount{
+ 
+    position: absolute;
+    bottom: 100px;
+    right:100px;
+    font-size: 18px;
+    height: 80px;
+    width: 70px;
+
+}
+#pageCount span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#nowArea{
+    position: absolute;
+    right: 25%;
+    height: 72px;
+    overflow: hidden;
+}
+#nowPage{
+    font-size: 30px;
+    transition:margin-top 1s;
+}
+#nowPage li {
+    list-style: none;
+    font-size: 72px;
+    line-height: 1;
+}
+#scrollPage{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: visible;
+    z-index: 1;
+}
+#scrollPage section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateY(0);
+    transition: transform 2s;
+    
+}
+section.active{
+    transform: translateY(-100vh)!important;
+}
+section img{
+    width: 100vw;
+    height: 100vh;
+}
+#section1{
+    z-index: 4;
+}
+#section2{
+    z-index: 3;
+}
+#section3{
+    z-index: 2;
+}
+#section4{
+    z-index: 1;
+}
